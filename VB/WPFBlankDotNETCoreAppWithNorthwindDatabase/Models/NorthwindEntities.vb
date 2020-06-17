@@ -1,7 +1,8 @@
 ﻿Imports System
+Imports System.IO
+Imports System.Reflection
 Imports Microsoft.EntityFrameworkCore
 Imports Microsoft.EntityFrameworkCore.Metadata
-Imports WPFBlankDotNETCoreAppWithNorthwindDatabase.Data
 
 Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
 	Partial Public Class NorthwindEntities
@@ -26,9 +27,14 @@ Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
 		Public Overridable Property Suppliers() As DbSet(Of Supplier)
 		Public Overridable Property Territories() As DbSet(Of Territory)
 
+		Public Shared Function GetFile(ByVal fileName As String, ByVal directoryName As String) As String
+			Dim appDirectory As String = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location)
+			Dim dirName As String = Path.GetFullPath(appDirectory)
+			Return Path.Combine(dirName, directoryName, fileName)
+		End Function
 		Protected Overrides Sub OnConfiguring(ByVal optionsBuilder As DbContextOptionsBuilder)
 			If Not optionsBuilder.IsConfigured Then
-				Dim databasepath = DataDirectoryHelper.GetFile("northwind.mdf", "Data")
+				Dim databasepath = GetFile("northwind.mdf", "Data")
 				optionsBuilder.UseSqlServer("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" & databasepath &";Integrated Security=True")
 			End If
 		End Sub
