@@ -1,7 +1,8 @@
 ﻿using System;
+using System.IO;
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using WPFBlankDotNETCoreAppWithNorthwindDatabase.Data;
 
 namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models {
     public partial class NorthwindEntities : DbContext {
@@ -23,9 +24,14 @@ namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models {
         public virtual DbSet<Supplier> Suppliers { get; set; }
         public virtual DbSet<Territory> Territories { get; set; }
 
+        public static string GetFile(string fileName, string directoryName) {
+            string appDirectory = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            string dirName = Path.GetFullPath(appDirectory);
+            return Path.Combine(dirName, directoryName, fileName);
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             if (!optionsBuilder.IsConfigured) {
-                var databasepath = DataDirectoryHelper.GetFile("northwind.mdf", "Data");
+                var databasepath = GetFile("northwind.mdf", "Data");
                 optionsBuilder.UseSqlServer("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename="+databasepath+";Integrated Security=True");
             }
         }
