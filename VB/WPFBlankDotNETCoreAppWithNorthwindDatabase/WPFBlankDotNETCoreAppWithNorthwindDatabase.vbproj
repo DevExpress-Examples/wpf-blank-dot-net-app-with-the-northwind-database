@@ -11,7 +11,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.WindowsDesktop.Wpf" Version="20.1.9" />
+    <PackageReference Include="DevExpress.WindowsDesktop.Wpf" Version="20.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
   </ItemGroup>
   <ItemGroup>
