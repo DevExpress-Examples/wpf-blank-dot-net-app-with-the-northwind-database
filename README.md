@@ -6,7 +6,7 @@
 # WPF Blank .NET Core App with the Northwind Database
 
 
-In this example, the blank sample project (.NET Core 3.1) is connected to the **Northwind** database.
+In this example, the blank sample project (.NET Core 3.1) is connected to the **Northwind** database. You can find this database at the following path: [/CS(VB)/WPFBlankDotNETCoreAppWithNorthwindDatabase/Data/Northwind.mdf](./CS/WPFBlankDotNETCoreAppWithNorthwindDatabase/Data/Northwind.mdf).
 
 Database structure:
 
