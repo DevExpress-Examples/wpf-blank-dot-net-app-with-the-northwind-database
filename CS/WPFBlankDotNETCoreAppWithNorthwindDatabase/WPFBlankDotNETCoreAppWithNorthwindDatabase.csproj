@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -7,7 +7,8 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.WindowsDesktop.Wpf" Version="20.1.13" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="20.1.13" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="20.1.13" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
   </ItemGroup>
   <ItemGroup>
