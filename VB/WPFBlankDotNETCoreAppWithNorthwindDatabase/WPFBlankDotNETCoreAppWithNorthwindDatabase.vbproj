@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
     <OutputType>WinExe</OutputType>
@@ -13,8 +13,7 @@
     <ApplicationDefinition Include="App.xaml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Wpf.Core" Version="20.1.13" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="20.1.13" />
+    <PackageReference Include="DevExpress.WindowsDesktop.Wpf" Version="20.1.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
   </ItemGroup>
   <ItemGroup>
