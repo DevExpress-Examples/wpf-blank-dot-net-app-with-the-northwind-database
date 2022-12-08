@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T900034)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# WPF Blank .NET App with the Northwind Database
+# WPF Blank .NET 6 App with the Northwind Database
 
 In this example, the blank sample project (.NET 6) is connected to the **Northwind** database. You can find this database at the following path: [/CS(VB)/WPFBlankDotNETAppWithNorthwindDatabase/Data/Northwind.mdf](./CS/WPFBlankDotNETAppWithNorthwindDatabase/Data/Northwind.mdf).
 
@@ -15,7 +15,9 @@ You can use this example to create DevExpress projects and explore our features.
 
 This project includes the [DevExpress ThemedWindow](https://docs.devexpress.com/WPF/DevExpress.Xpf.Core.ThemedWindow) as a root element. Refer to the following topic for more information about custom-designed themes: [WPF Application Themes](https://docs.devexpress.com/WPF/7406/common-concepts/themes).
 
-To create a project and connect it to a database:
+## Implementation Details
+
+The steps below demonstrate how to create this sample application:
 
 1. Create a new project:
    ![image](https://user-images.githubusercontent.com/65009440/206438431-356d95e0-443b-4730-93de-9f66f9d63757.png)
