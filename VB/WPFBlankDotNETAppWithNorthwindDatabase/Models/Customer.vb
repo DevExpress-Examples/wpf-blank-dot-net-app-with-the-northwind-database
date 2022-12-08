@@ -1,14 +1,10 @@
 Imports System.Collections.Generic
 
-Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
+Namespace WPFBlankDotNETAppWithNorthwindDatabase.Models
 
-    Public Partial Class Supplier
+    Public Partial Class Customer
 
-        Public Sub New()
-            Products = New HashSet(Of Product)()
-        End Sub
-
-        Public Property SupplierId As Integer
+        Public Property CustomerId As String
 
         Public Property CompanyName As String
 
@@ -30,8 +26,6 @@ Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
 
         Public Property Fax As String
 
-        Public Property HomePage As String
-
-        Public Overridable Property Products As ICollection(Of Product)
+        Public Overridable ReadOnly Property Orders As ICollection(Of Order) = New List(Of Order)()
     End Class
 End Namespace

@@ -1,12 +1,8 @@
 Imports System.Collections.Generic
 
-Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
+Namespace WPFBlankDotNETAppWithNorthwindDatabase.Models
 
     Public Partial Class Category
-
-        Public Sub New()
-            Products = New HashSet(Of Product)()
-        End Sub
 
         Public Property CategoryId As Integer
 
@@ -16,6 +12,6 @@ Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
 
         Public Property Picture As Byte()
 
-        Public Overridable Property Products As ICollection(Of Product)
+        Public Overridable ReadOnly Property Products As ICollection(Of Product) = New List(Of Product)()
     End Class
 End Namespace

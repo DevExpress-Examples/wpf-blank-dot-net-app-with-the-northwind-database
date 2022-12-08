@@ -1,12 +1,8 @@
 Imports System.Collections.Generic
 
-Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
+Namespace WPFBlankDotNETAppWithNorthwindDatabase.Models
 
     Public Partial Class Order
-
-        Public Sub New()
-            OrderDetails = New HashSet(Of OrderDetail)()
-        End Sub
 
         Public Property OrderId As Integer
 
@@ -40,8 +36,8 @@ Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
 
         Public Overridable Property Employee As Employee
 
-        Public Overridable Property ShipViaNavigation As Shipper
+        Public Overridable ReadOnly Property OrderDetails As ICollection(Of OrderDetail) = New List(Of OrderDetail)()
 
-        Public Overridable Property OrderDetails As ICollection(Of OrderDetail)
+        Public Overridable Property ShipViaNavigation As Shipper
     End Class
 End Namespace

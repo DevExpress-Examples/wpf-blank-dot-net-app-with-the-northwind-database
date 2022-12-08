@@ -1,12 +1,8 @@
 Imports System.Collections.Generic
 
-Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
+Namespace WPFBlankDotNETAppWithNorthwindDatabase.Models
 
     Public Partial Class Shipper
-
-        Public Sub New()
-            Orders = New HashSet(Of Order)()
-        End Sub
 
         Public Property ShipperId As Integer
 
@@ -14,6 +10,6 @@ Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
 
         Public Property Phone As String
 
-        Public Overridable Property Orders As ICollection(Of Order)
+        Public Overridable ReadOnly Property Orders As ICollection(Of Order) = New List(Of Order)()
     End Class
 End Namespace

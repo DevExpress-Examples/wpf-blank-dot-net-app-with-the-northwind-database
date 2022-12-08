@@ -1,4 +1,4 @@
-Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
+Namespace WPFBlankDotNETAppWithNorthwindDatabase.Models
 
     Public Partial Class CustomerDemographic
 

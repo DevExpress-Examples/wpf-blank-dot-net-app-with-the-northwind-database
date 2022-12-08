@@ -1,13 +1,8 @@
 Imports System.Collections.Generic
 
-Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
+Namespace WPFBlankDotNETAppWithNorthwindDatabase.Models
 
     Public Partial Class Employee
-
-        Public Sub New()
-            InverseReportsToNavigation = New HashSet(Of Employee)()
-            Orders = New HashSet(Of Order)()
-        End Sub
 
         Public Property EmployeeId As Integer
 
@@ -45,10 +40,10 @@ Namespace WPFBlankDotNETCoreAppWithNorthwindDatabase.Models
 
         Public Property PhotoPath As String
 
+        Public Overridable ReadOnly Property InverseReportsToNavigation As ICollection(Of Employee) = New List(Of Employee)()
+
+        Public Overridable ReadOnly Property Orders As ICollection(Of Order) = New List(Of Order)()
+
         Public Overridable Property ReportsToNavigation As Employee
-
-        Public Overridable Property InverseReportsToNavigation As ICollection(Of Employee)
-
-        Public Overridable Property Orders As ICollection(Of Order)
     End Class
 End Namespace
