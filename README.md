@@ -3,14 +3,13 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T900034)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# WPF Blank .NET Core App with the Northwind Database
+# WPF Blank .NET App with the Northwind Database
 
-
-In this example, the blank sample project (.NET Core 3.1) is connected to the **Northwind** database. You can find this database at the following path: [/CS(VB)/WPFBlankDotNETCoreAppWithNorthwindDatabase/Data/Northwind.mdf](./CS/WPFBlankDotNETCoreAppWithNorthwindDatabase/Data/Northwind.mdf).
+In this example, the blank sample project (.NET 6) is connected to the **Northwind** database. You can find this database at the following path: [/CS(VB)/WPFBlankDotNETAppWithNorthwindDatabase/Data/Northwind.mdf](./CS/WPFBlankDotNETAppWithNorthwindDatabase/Data/Northwind.mdf).
 
 Database structure:
 
-![](/images/DatabaseStructure.png)
+![image](https://user-images.githubusercontent.com/65009440/206457391-85e331c6-9dfd-4e6b-b3c3-c509d2778ac2.png)
 
 You can use this example to create DevExpress projects and explore our features.
 
@@ -19,25 +18,26 @@ This project includes the [DevExpress ThemedWindow](https://docs.devexpress.com/
 To create a project and connect it to a database:
 
 1. Create a new project:
-
-    ![](/images/WPF_DotNETCoreProject.png)
-
-2. Select the DevExpress v20.1 WPF Blank App (.NET Core): 
-
-    ![](/images/WPF_DotNETCoreTemplate.png)
-
+   ![image](https://user-images.githubusercontent.com/65009440/206438431-356d95e0-443b-4730-93de-9f66f9d63757.png)
+2. Select the DevExpress v22.2 WPF App Template Gallery:
+   ![image](https://user-images.githubusercontent.com/65009440/206439153-d51bb505-e2e1-49b3-9f5e-46d6f0de0306.png)
 3. Specify the Project name and click **Create**:
+   ![image](https://user-images.githubusercontent.com/65009440/206441123-5eaed497-8823-46e0-ba91-a14d3d325aad.png)
+4. Select the target framework and click **Create Project**:
+   ![image](https://user-images.githubusercontent.com/65009440/206441661-dfaf8964-f561-4b0c-9111-bf4fc7ec5306.png)
+5. Add the `Microsoft.EntityFrameworkCore.SqlServer` and `Microsoft.EntityFrameworkCore.Tools` NuGet packages to the project:
+   ![image](https://user-images.githubusercontent.com/65009440/206443012-62684ab0-2cf8-4d0e-a03d-74442bdc0212.png)
+6. Open the [Package Manager Console](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-powershell) and run the following command. This command generates code for a DbContext and entity types for a database. The `C:\Data\Northwind.mdf` string is the path to your local database:
 
-    ![](/images/WPF_DotNETCoreNamePath.png)
+   `Scaffold-DbContext "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Data\Northwind.mdf;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context NorthwindEntities -Tables "Categories","Customers","CustomerDemographics","Employees","Orders","Order Details","Products","Region","Shippers","Suppliers","Territories"`
 
-4. Add the `Microsoft.EntityFrameworkCore.SqlServer` and `Microsoft.EntityFrameworkCore.Tools` NuGet packages to the project:
+## Documentation
 
-    ![](/images/WPF_DotNETCoreNuGetPackages.png)
+* [Scaffold-DbContext](https://learn.microsoft.com/en-us/ef/core/cli/powershell#scaffold-dbcontext).
+* [.NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/).
+* [DevExpress WPF Controls](https://docs.devexpress.com/WPF/7875/wpf-controls)
+* [Getting Started with the DevExpress Data Grid](https://docs.devexpress.com/WPF/5863/controls-and-libraries/data-grid/getting-started)
 
-5. Open the [Package Manager Console](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-powershell) and run the following command. This command generates code for a DbContext and entity types for a database:
- 
-    Scaffold-DbContext "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Data\Northwind.mdf;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context NorthwindEntities -Tables "Categories","Customers","CustomerDemographics","Employees","Orders","Order Details","Products","Region","Shippers","Suppliers","Territories"
+## More Examples
 
-Refer to the [https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell#scaffold-dbcontext](https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell#scaffold-dbcontext) topic for more information on how to use the **Scaffold-DbContext** command.
-
-Refer to the [https://docs.microsoft.com/en-us/dotnet/core/](https://docs.microsoft.com/en-us/dotnet/core/) topic for more information on how to work with .NET Core.
+* [WPF Data Grid - Getting Started (.NET)](https://github.com/DevExpress-Examples/wpf-data-grid-getting-started-net-core)
