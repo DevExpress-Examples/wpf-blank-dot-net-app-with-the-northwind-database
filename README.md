@@ -13,7 +13,7 @@ Database structure:
 
 You can use this example to create DevExpress projects and explore our features.
 
-This project includes the [DevExpress ThemedWindow](https://docs.devexpress.com/WPF/DevExpress.Xpf.Core.ThemedWindow) as a root element. Refer to the [Themes](https://docs.devexpress.com/WPF/7406/common-concepts/themes) topic for more information about custom-designed themes.
+This project includes the [DevExpress ThemedWindow](https://docs.devexpress.com/WPF/DevExpress.Xpf.Core.ThemedWindow) as a root element. Refer to the following topic for more information about custom-designed themes [Themes](https://docs.devexpress.com/WPF/7406/common-concepts/themes).
 
 To create a project and connect it to a database:
 
