@@ -35,8 +35,8 @@ The steps below demonstrate how to create this sample application:
 
 ## Documentation
 
-* [Scaffold-DbContext](https://learn.microsoft.com/en-us/ef/core/cli/powershell#scaffold-dbcontext).
-* [.NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/).
+* [Scaffold-DbContext](https://learn.microsoft.com/en-us/ef/core/cli/powershell#scaffold-dbcontext)
+* [.NET documentation](https://learn.microsoft.com/en-us/dotnet/fundamentals/)
 * [DevExpress WPF Controls](https://docs.devexpress.com/WPF/7875/wpf-controls)
 * [Getting Started with the DevExpress Data Grid](https://docs.devexpress.com/WPF/5863/controls-and-libraries/data-grid/getting-started)
 
