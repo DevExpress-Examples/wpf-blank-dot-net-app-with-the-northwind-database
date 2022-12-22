@@ -22,7 +22,7 @@ The steps below demonstrate how to create this sample application:
 1. Create a new project:
    ![image](https://user-images.githubusercontent.com/65009440/206438431-356d95e0-443b-4730-93de-9f66f9d63757.png)
 2. Select the DevExpress v22.2 WPF App Template Gallery:
-   ![image](https://user-images.githubusercontent.com/65009440/206439153-d51bb505-e2e1-49b3-9f5e-46d6f0de0306.png)
+   ![image](https://user-images.githubusercontent.com/65009440/209149534-d966bdfd-8eec-45b0-a7df-755b2a17ffa8.png)
 3. Specify the Project name and click **Create**:
    ![image](https://user-images.githubusercontent.com/65009440/206441123-5eaed497-8823-46e0-ba91-a14d3d325aad.png)
 4. Select the target framework and click **Create Project**:
