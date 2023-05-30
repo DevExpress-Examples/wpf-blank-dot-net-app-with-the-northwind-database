@@ -25,8 +25,8 @@ The steps below demonstrate how to create this sample application:
    ![image](https://user-images.githubusercontent.com/65009440/209149534-d966bdfd-8eec-45b0-a7df-755b2a17ffa8.png)
 3. Specify the Project name and click **Create**:
    ![image](https://user-images.githubusercontent.com/65009440/206441123-5eaed497-8823-46e0-ba91-a14d3d325aad.png)
-4. Select the target framework and click **Create Project**:
-   ![image](https://user-images.githubusercontent.com/65009440/206441661-dfaf8964-f561-4b0c-9111-bf4fc7ec5306.png)
+4. Select the target framework, language, and **Blank MVVM Application** template and click **Create Project**:
+   ![image](https://github.com/DevExpress-Examples/wpf-blank-dot-net-app-with-the-northwind-database/assets/65009440/6255e9c5-2891-41a6-9138-9417faebbd57)
 5. Add the `Microsoft.EntityFrameworkCore.SqlServer` and `Microsoft.EntityFrameworkCore.Tools` NuGet packages to the project:
    ![image](https://user-images.githubusercontent.com/65009440/206443012-62684ab0-2cf8-4d0e-a03d-74442bdc0212.png)
 6. Open the [Package Manager Console](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-powershell) and run the following command. This command generates code for a DbContext and entity types for a database. The `C:\Data\Northwind.mdf` string is the path to your local database:
