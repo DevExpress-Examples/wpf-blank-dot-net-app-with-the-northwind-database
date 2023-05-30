@@ -1,9 +1,11 @@
+﻿Imports System
+Imports System.Collections.Generic
+
 Namespace WPFBlankDotNETAppWithNorthwindDatabase.Models
 
-    Public Partial Class CustomerDemographic
+	Partial Public Class CustomerDemographic
+		Public Property CustomerTypeId() As String
 
-        Public Property CustomerTypeId As String
-
-        Public Property CustomerDesc As String
-    End Class
+		Public Property CustomerDesc() As String
+	End Class
 End Namespace

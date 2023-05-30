@@ -1,13 +1,13 @@
+﻿Imports System
 Imports System.Collections.Generic
 
 Namespace WPFBlankDotNETAppWithNorthwindDatabase.Models
 
-    Public Partial Class Region
+	Partial Public Class Region
+		Public Property RegionId() As Integer
 
-        Public Property RegionId As Integer
+		Public Property RegionDescription() As String
 
-        Public Property RegionDescription As String
-
-        Public Overridable ReadOnly Property Territories As ICollection(Of Territory) = New List(Of Territory)()
-    End Class
+		Public Overridable Property Territories() As ICollection(Of Territory) = New List(Of Territory)()
+	End Class
 End Namespace
