@@ -43,7 +43,7 @@ Refer to the [https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powersh
 
 Refer to the [https://docs.microsoft.com/en-us/dotnet/core/](https://docs.microsoft.com/en-us/dotnet/core/) topic for more information on how to work with .NET Core.
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-blank-dot-net-app-with-the-northwind-database&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-blank-dot-net-app-with-the-northwind-database&~~~was_helpful=no)
 
