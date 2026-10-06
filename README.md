@@ -4,9 +4,9 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# WPF Blank .NET 6 App with the Northwind Database
+# WPF Blank .NET App with the Northwind Database
 
-In this example, the blank sample project (.NET 6) is connected to the **Northwind** database. You can find this database at the following path: [/CS(VB)/WPFBlankDotNETAppWithNorthwindDatabase/Data/Northwind.mdf](./CS/WPFBlankDotNETAppWithNorthwindDatabase/Data/Northwind.mdf).
+In this example, the blank sample project (.NET) is connected to the **Northwind** database. You can find this database at the following path: [/CS(VB)/WPFBlankDotNETAppWithNorthwindDatabase/Data/Northwind.mdf](./CS/WPFBlankDotNETAppWithNorthwindDatabase/Data/Northwind.mdf).
 
 Database structure:
 
@@ -22,7 +22,7 @@ The steps below demonstrate how to create this sample application:
 
 1. Create a new project:
    ![image](https://user-images.githubusercontent.com/65009440/206438431-356d95e0-443b-4730-93de-9f66f9d63757.png)
-2. Select the DevExpress v22.2 WPF App Template Gallery:
+2. Select the DevExpress WPF App Template Gallery:
    ![image](https://user-images.githubusercontent.com/65009440/209149534-d966bdfd-8eec-45b0-a7df-755b2a17ffa8.png)
 3. Specify the Project name and click **Create**:
    ![image](https://user-images.githubusercontent.com/65009440/206441123-5eaed497-8823-46e0-ba91-a14d3d325aad.png)
